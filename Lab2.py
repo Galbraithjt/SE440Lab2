@@ -1,4 +1,10 @@
-train = input ("Please choose a train enter the number coordinating with the destination:\n"
+def checkSeatAvailability():
+    print("Checking Availability")
+
+def verifyPayment():
+    print("Verifing Payment")
+
+train = input("Please choose a train enter the number coordinating with the destination:\n"
                " 1) New York City, NY 2) Buffalo, NY 3) Jersey City, NJ \n")
 
 train = int(train)
@@ -11,13 +17,13 @@ elif train == 2:
 elif train == 3:
     cost = 7.50
 #system checks
-def checkSeatAvailability():#to Do
+checkSeatAvailability()
 
-print ("You have selected {} your cost is {} \nThere is a seat available on that train,\n"
+print("You have selected {} your cost is {} \nThere is a seat available on that train,\n"
        "Please insert payment".format(train, cost))
 
 #system connects to card company to verify payment
-def verifyPayment():#to DO
+verifyPayment()
 
 #system prints receipt
-print ("Thank you please take receipt below")
+print("Thank you please take receipt below")
